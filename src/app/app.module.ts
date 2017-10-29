@@ -1,32 +1,39 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule} from '@angular/router';
+import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
+import { SuperTableModule } from 'ngx-super-table';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
+//Components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
+import { SupertableComponent } from './components/supertable/supertable.component';
+import { TableComponent } from './components/table/table.component';
+// import { InstrumentComponent } from './components/supertable/instrument.component';
+
+
+//Modules
 import { BootstrapModule} from './modules/bootstrap.module';
-import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
-/*import { AppRoutingModule } from './modules/router.module';*/
-import { Router } from '@angular/router';
-import { RouterModule } from '@angular/router';
-import { SuperTableModule } from 'ngx-super-table';
+import { Approute } from './modules/router.module';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    SupertableComponent,
+    TableComponent,
+    // InstrumentComponent
   ],
   imports: [
     BrowserModule,
     BootstrapModule,
     AngularFontAwesomeModule,
     SuperTableModule,
-    /*AppRoutingModule,*/
-    RouterModule.forRoot([
-      {
-        path: 'header',
-        component: HeaderComponent
-      }
-    ])
+    NgxDatatableModule,
+    RouterModule.forRoot(Approute)
   ],
   providers: [],
   bootstrap: [AppComponent]

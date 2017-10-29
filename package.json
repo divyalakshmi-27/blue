@@ -21,6 +21,7 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "@swimlane/ngx-datatable": "^10.4.0",
     "angular-font-awesome": "^2.3.7",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
@@ -28,6 +29,7 @@
     "ngx-bootstrap": "^1.9.3",
     "ngx-super-table": "0.0.2",
     "rxjs": "^5.4.2",
+    "typescript": "^2.7.0-dev.20171029",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
